@@ -1,0 +1,87 @@
+body {
+font-family: Arial, sans-serif;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+color: #333;
+}
+
+p {
+margin-bottom: 20px;
+text-align: left;
+}
+
+#chessboard {
+display: grid;
+grid-template-columns: repeat(8, 60px);
+grid-template-rows: repeat(8, 60px);
+gap: 0;
+width: 480px;
+height: 480px;
+margin: 20px auto;
+border: 2px solid #333;
+}
+
+.cell {
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+font-size: 36px;
+transition: background-color 0.2s;
+border: solid black 1px;
+}
+
+.white {
+background-color: #f0d9b5;
+}
+
+.black {
+  background-color: #b58863;
+}
+
+.threatened {
+  background-color: #FF746C;
+}
+
+.queen {
+  font-size: 50px;
+  color: black;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#solution-info {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#solution-count {
+  color: #333;
+  margin-bottom: 10px;
+}
